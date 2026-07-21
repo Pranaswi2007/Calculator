@@ -1,56 +1,80 @@
-body{
-  margin: 0;
-  display: flex;
-  justify-content: center;
+*{
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+}
+.container{
+  height: 500px;
   align-items: center;
-  height: 100vh;
-  background-color: hsl(0,0%,95%);
+  justify-content: center;
+  display: flex;
 }
-#calculator{
-  font-family: Arial, sans-serif;
-  background-color: hsl(0,0%,15%);
-  border-radius: 15px;
-  max-width: 500px;
-  overflow: hidden;
-}
-#display{
-  width: 100%;
-  padding: 20px;
-  font-size: 5rem;
-  text-align: left;
-  border: none;
-  background-color: hsl(0,0%,20%);
-  color: white;
-}
-#keys{
+.calculator{
+  background-color: teal;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 7px rgba(209, 1, 1, 0.3), inset -3px -3px 5px rgba(0, 0, 0, 0.289);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 25px;
+  grid-template-columns: repeat(4,75px);
+}
+input{
+  grid-column: span 4;
+  height: 78px;
+  width: 282px;
+  background-color: white;
+  box-shadow: inset -5px -5px 3px rgba(0,0,0,0.174), inset 5px 5px 3px rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 7px;
+  color: black;
+  font-size: 55px;
+  text-align: end;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 button{
-  width: 75px;
-  height: 75px;
-  border-radius: 50px;
+  height: 50px;
+  width: 60px;
+  background-color: white;
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.442), 2px 2px 5px rgba(13,13,13,0.585);
+  margin: 8px;
+  border-radius: 5px;
   border: none;
-  background-color: hsl(0,0%,30%);
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 30px;
   cursor: pointer;
 }
 button:hover{
-  background-color: hsl(0,0%,40%);
+  height: 50px;
+  width: 60px;
+  background-color: black;
+  color: rgb(252, 255, 48);
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.442), 2px 2px 5px rgba(13,13,13,0.585);
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
 }
-button:active{
-  background-color: hsl(0,0%,50%);
+.btn{
+  height: 50px;
+  width: 137px;
+  background-color: white;
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.174), 2px 2px 5px rgba(13,13,13,0.585);
 }
-.operator-btn{
-  background-color: hsl(35,100%,55%);
+.btn:hover{
+  color: rgb(252, 255, 48);
+  background-color: black;
+  height: 50px;
+  width: 137px;
+  border-radius: 5px;
 }
-.operator-btn:hover{
-  background-color: hsl(35,100%,65%);
+p{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12px;
 }
-.operator-btn:active{
-  background-color: hsl(35,100%,75%);
-}
+
